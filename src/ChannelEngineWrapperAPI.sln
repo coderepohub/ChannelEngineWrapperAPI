@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Clinets.ConsoleApp", "Clients\ChannelEngine.Clinets.ConsoleApp\ChannelEngine.Clinets.ConsoleApp.csproj", "{31FC78E6-ED4A-4362-8300-013946C54C38}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{5775526E-3D93-4256-8EDA-557EBB0399E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31FC78E6-ED4A-4362-8300-013946C54C38} = {5775526E-3D93-4256-8EDA-557EBB0399E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {993FBF04-52EC-410B-80E8-6C25B18E79B0}
