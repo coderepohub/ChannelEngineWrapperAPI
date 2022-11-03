@@ -1,0 +1,86 @@
+﻿@model ChannelEngine.Clients.WebApp.Models.ChannelAPIAgentTestCaseModel
+
+@{
+    ViewData["Title"] = "Test Cases";
+}
+
+<h1>Test Cases</h1>
+<br/>
+<br/>
+
+<div style="padding:10px;">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsInProgressOrderFetched)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsTopFiveOrdersFetched)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsOrderUpdated)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.IsInProgressOrderFetched)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.IsTopFiveOrdersFetched)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.IsOrderUpdated)
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<div style="padding:10px;">
+    <h4>Displaying Top five in progress orders</h4>
+    <hr />
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    ProductName
+                </th>
+                <th>
+                    GTIN
+                </th>
+                <th>
+                    TotalQuantity
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.FetchedTopOrders)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GTIN)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalQuantity)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+

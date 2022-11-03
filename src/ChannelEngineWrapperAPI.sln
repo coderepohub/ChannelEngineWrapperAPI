@@ -7,6 +7,30 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Clinets.Conso
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{5775526E-3D93-4256-8EDA-557EBB0399E0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogics", "BusinessLogics", "{299E52F1-28AA-4288-9D71-240B310C591F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngineWrapperAPI.BusinessLogics", "BusinessLogics\ChannelEngineWrapperAPI.BusinessLogics\ChannelEngineWrapperAPI.BusinessLogics.csproj", "{BC0E659E-CE55-417F-BCE9-BBD0311F364C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIClients", "APIClients", "{034E1057-7B13-4744-BC37-08BE7D043723}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C5152A96-BB58-4AD7-9FB8-A315854EE92A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngineWrapperAPI.BusineesLogics.Tests", "Tests\ChannelEngineWrapperAPI.BusineesLogics.Tests\ChannelEngineWrapperAPI.BusineesLogics.Tests.csproj", "{F6EFA6AF-57AE-4E10-980F-3A6F29A1DC0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngineAPIClient", "APIClients\ChannelEngineAPIClient\ChannelEngineAPIClient.csproj", "{C456B930-FDE1-4EC4-8031-88A3C14D780F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{BB3DCF02-8FFE-4AEC-90FF-44EA3C17C165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngineApiModels", "Models\ChannelEngineApiModels\ChannelEngineApiModels.csproj", "{FECFA549-A3A1-4040-A1E2-C948FAD09C45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{ABCC0DA9-0238-4E30-AD3D-30013B6986DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngineContracts", "Contracts\ChannelEngineContracts\ChannelEngineContracts.csproj", "{6AD9DDDD-3159-42C4-ACC2-13681DF9BDB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Clients.WebApp", "Clients\ChannelEngine.Clients.WebApp\ChannelEngine.Clients.WebApp.csproj", "{43664DA9-D875-4870-9C8E-42E80CC1E39A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngineWrapperAPI.ChannelEngineAPIClient.Tests", "Tests\ChannelEngineWrapperAPI.ChannelEngineAPIClient.Tests\ChannelEngineWrapperAPI.ChannelEngineAPIClient.Tests.csproj", "{EB49E875-91C7-4BCF-B65F-2581BEF5456A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +41,47 @@ Global
 		{31FC78E6-ED4A-4362-8300-013946C54C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31FC78E6-ED4A-4362-8300-013946C54C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31FC78E6-ED4A-4362-8300-013946C54C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC0E659E-CE55-417F-BCE9-BBD0311F364C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC0E659E-CE55-417F-BCE9-BBD0311F364C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC0E659E-CE55-417F-BCE9-BBD0311F364C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC0E659E-CE55-417F-BCE9-BBD0311F364C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6EFA6AF-57AE-4E10-980F-3A6F29A1DC0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6EFA6AF-57AE-4E10-980F-3A6F29A1DC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6EFA6AF-57AE-4E10-980F-3A6F29A1DC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6EFA6AF-57AE-4E10-980F-3A6F29A1DC0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C456B930-FDE1-4EC4-8031-88A3C14D780F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C456B930-FDE1-4EC4-8031-88A3C14D780F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C456B930-FDE1-4EC4-8031-88A3C14D780F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C456B930-FDE1-4EC4-8031-88A3C14D780F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FECFA549-A3A1-4040-A1E2-C948FAD09C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FECFA549-A3A1-4040-A1E2-C948FAD09C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FECFA549-A3A1-4040-A1E2-C948FAD09C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FECFA549-A3A1-4040-A1E2-C948FAD09C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD9DDDD-3159-42C4-ACC2-13681DF9BDB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD9DDDD-3159-42C4-ACC2-13681DF9BDB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD9DDDD-3159-42C4-ACC2-13681DF9BDB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD9DDDD-3159-42C4-ACC2-13681DF9BDB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43664DA9-D875-4870-9C8E-42E80CC1E39A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43664DA9-D875-4870-9C8E-42E80CC1E39A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43664DA9-D875-4870-9C8E-42E80CC1E39A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43664DA9-D875-4870-9C8E-42E80CC1E39A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB49E875-91C7-4BCF-B65F-2581BEF5456A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB49E875-91C7-4BCF-B65F-2581BEF5456A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB49E875-91C7-4BCF-B65F-2581BEF5456A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB49E875-91C7-4BCF-B65F-2581BEF5456A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{31FC78E6-ED4A-4362-8300-013946C54C38} = {5775526E-3D93-4256-8EDA-557EBB0399E0}
+		{BC0E659E-CE55-417F-BCE9-BBD0311F364C} = {299E52F1-28AA-4288-9D71-240B310C591F}
+		{F6EFA6AF-57AE-4E10-980F-3A6F29A1DC0E} = {C5152A96-BB58-4AD7-9FB8-A315854EE92A}
+		{C456B930-FDE1-4EC4-8031-88A3C14D780F} = {034E1057-7B13-4744-BC37-08BE7D043723}
+		{FECFA549-A3A1-4040-A1E2-C948FAD09C45} = {BB3DCF02-8FFE-4AEC-90FF-44EA3C17C165}
+		{6AD9DDDD-3159-42C4-ACC2-13681DF9BDB6} = {ABCC0DA9-0238-4E30-AD3D-30013B6986DA}
+		{43664DA9-D875-4870-9C8E-42E80CC1E39A} = {5775526E-3D93-4256-8EDA-557EBB0399E0}
+		{EB49E875-91C7-4BCF-B65F-2581BEF5456A} = {C5152A96-BB58-4AD7-9FB8-A315854EE92A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {993FBF04-52EC-410B-80E8-6C25B18E79B0}
